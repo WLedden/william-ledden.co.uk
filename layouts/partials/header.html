@@ -1,0 +1,31 @@
+<header>
+    <script src="/js/script.js"></script>
+    <div class="header-container">
+        <!-- Website Title -->
+        <div>
+            <h3 id="header-title">{{ .Site.Title }}</h3>
+        </div>
+         
+         <!-- Nav Bar-->
+        <nav class="header-nav">
+            <ul id="nav-menu">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL }}" class='nav-link'>
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            
+
+        </nav>
+    </div>
+</header>

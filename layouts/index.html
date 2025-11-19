@@ -1,0 +1,132 @@
+{{ define "main" }}
+<section id="home">
+    <div class="section-content">
+        <img src="images/ProfilePic.jpg" alt="profile-pic" id="profile-pic">
+        <div class="section-body">
+            <h1>{{ .Site.Title }}</h1>
+            <p>Computer Science & Artificial Intelligence Graduate from Swansea University. With award-winning academic work, and machine learning research experience, I bring strong technical skills and enthusiasm to learn to my work and in collaboration. I’m currently looking for graduate roles to gain industry experience before I continue my studies on a Machine learning Master’s course.</p>
+            <div id="home-links">
+                <a href="https://github.com/WLedden">
+                    <img src="images/github.svg" alt="github" id="github-link" class="home-link">
+                </a>
+                <a href="https://www.linkedin.com/in/william-ledden/">
+                    <img src="images/linkedin.svg" alt="linkedin" id="linkedin-link" class="home-link">
+                </a>
+                <a  href="mailto:WillLedden@outlook.com"id="contact-button">Contact me
+                    <img src="images/send-icon.svg" alt="send-icon" id="send-icon" class="home-link">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-content">
+        
+        <div class="skills-grid">
+            {{ range readDir "static/images/skills" }}
+                {{ if not .IsDir }}
+                <div class="skills-item">
+                    <img src="/images/skills/{{ .Name }}" alt="{{ .Name }}" loading="lazy">
+                    <p class="skill-name">{{ replaceRE `\.[^.]+$` "" .Name }}</p>
+                </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="section-content">
+        <div id="timeline">
+            <div class="education-item">
+                <div class="item-content">
+                    <h3 class="edu-title">The Piggott School</h3>
+                    <p class="level-and-date">A-levels - 2020-2022</p>
+                    <ul>
+                        <li>Computer Science - A*</li>
+                        <li>Mathematics - A</li>
+                        <li>Physics - A</li>
+                    </ul>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+            <div class="education-item">
+                <div class="item-content">
+                    <h3 class="edu-title">Swansea University</h3>
+                    <p class="level-and-date">Bachelor of Science - 2022-2025</p>
+                    <p class="degree">BSc Computer Science & Artificial Intelligence (Hons)</p>
+                    <ul>
+                        <li>First Class Honours</li>
+                        <li>Best Project Award</li>
+                        <li>Best Overall Performance Award</li>
+                    </ul>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+        </div>
+        <div id="certifications">
+            <h2>Certifications</h2>
+            <div id="certifications-content">
+                <div class="certifications-item">
+                    <img src="images/HuggingFace.svg" alt="cert-icon" class="cert-icon">
+                    <div class="cert-text">
+                        <h3>Deep Reinforcement Learning</h3>
+                        <p>Hugging Face</p>
+                    </div>
+                </div>
+                <div class="certifications-item">
+                    <img src="images/fundamentals-badge.svg" alt="cert-icon" class="cert-icon">
+                    <div class="cert-text">
+                        <h3>Azure Fundamentals</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+                <div class="certifications-item">
+                    <img src="images/fundamentals-badge.svg" alt="cert-icon" class="cert-icon">
+                    <div class="cert-text">
+                        <h3>Azure AI Fundamentals</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+                <div class="certifications-item">
+                    <img src="images/fundamentals-badge.svg" alt="cert-icon" class="cert-icon">
+                    <div class="cert-text">
+                        <h3>Azure Data Fundamentals</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="section-content">
+        <div class="experience-item">
+            <img src="images/Figure 1.PNG" alt="Figure from research" id="DBVMD-image">
+            <div class="experience-text">
+                <h3 class="exp-title">Computer Vision Research</h3>
+                <ul class="exp-list">
+                    <li>Collaborated in PhD computer vision research, capturing, processing, and annotating a novel research dataset.</li>
+                    <li>Used PyTorch, Pandas, and Scikit-learn to perform statistical analysis, and evaluate state-of-the-art models on the dataset.</li>
+                    <li>Presented to academic audiences and authored a subsection on dataset methodology and findings during research.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience-item" id="recordcrate">
+            <img src="images/vinyl-record.svg" alt="Figure from research" id="recordcrate-img">
+            <div class="experience-text">
+                <h3 class="exp-title">RecordCrate</h3>
+                <ul class="exp-list">
+                    <li>Collaborating in a small team to design and develop a music review and social platform for web & mobile.</li>
+                    <li>Using agile methodologies and organisational tools like Jira, confluence & Git to organise and document the project.</li>
+                    <li>Using front-end web technologies like angular to build responsive UIs, and Django to build Python-based backend systems.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

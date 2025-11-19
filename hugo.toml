@@ -1,0 +1,24 @@
+baseURL = 'https://william-ledden.co.uk/'
+languageCode = 'en-us'
+title = 'William Ledden'
+
+[menu]
+    [[menu.main]]
+    name = "Home"
+    url = "#home"
+    weight = 1
+
+    [[menu.main]]
+    name = "Skills"
+    url = "#skills"
+    weight = 2
+
+    [[menu.main]]
+    name = "Education"
+    url = "#education"
+    weight = 3
+
+    [[menu.main]]
+    name = "Experience"
+    url = "#experience"
+    weight = 4
