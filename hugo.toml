@@ -1,6 +1,7 @@
 baseURL = 'https://william-ledden.co.uk/'
 languageCode = 'en-us'
 title = 'William Ledden'
+publishDir = "docs"
 
 [menu]
     [[menu.main]]
