@@ -160,6 +160,8 @@ p, #contact-button {
   align-items: center;
   gap: 15px;
   padding: 0px 20px;
+  width: 100%;
+  align-self: center;
 }
 
 /* Header */
@@ -175,6 +177,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
   height: fit-content;
+  align-self: flex-start;
 }
 
 .header-container {
