@@ -137,6 +137,12 @@ h1, h2, h3 {
   color: black;
 }
 
+h3 {
+  font-family: "Mako";
+  text-decoration: underline;
+  color: #363636;
+}
+
 .section-title {
   text-align: center;
   margin-top: 10px;
@@ -150,8 +156,9 @@ h1 {
   font-weight: 600;
 }
 
-p, #contact-button {
+p, #contact-button, h3 {
   font-family: "Mako";
+  font-weight: 300;
 }
 
 .section-content {
