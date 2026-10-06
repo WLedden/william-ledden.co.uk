@@ -1,0 +1,12 @@
+- name: Azure Fundamentals
+  issuer: Microsoft
+  icon: images/fundamentals-badge.svg
+- name: Azure AI Fundamentals
+  issuer: Microsoft
+  icon: images/fundamentals-badge.svg
+- name: Azure Data Fundamentals
+  issuer: Microsoft
+  icon: images/fundamentals-badge.svg
+- name: Deep Reinforcement Learning
+  issuer: Hugging Face
+  icon: images/HuggingFace.svg
