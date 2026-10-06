@@ -447,7 +447,7 @@ ul {
   max-width: 600px;
 }
 
-#DBVMD-image, #WaterNet-Logo {
+.experience-image {
   width: 400px;
   align-self: center;
 }

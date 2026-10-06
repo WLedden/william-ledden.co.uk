@@ -42,7 +42,7 @@
     <div class="section-content">
         {{ range (site.GetPage "/experience").Pages.ByWeight }}
         <div class="experience-item">
-            <img src="/{{ .Params.image }}" alt="{{ .Title }}" id="{{ .Params.image_id }}">
+            <img src="/{{ .Params.image }}" alt="{{ .Title }}" id="{{ .Params.image_id }}" class="experience-image">
             <div class="experience-text">
                 <h3 class="exp-title">{{ .Title }}</h3>
                 {{ .Content }}
