@@ -1,6 +1,6 @@
 +++
 title = 'Computer Vision Research'
-weight = 1
+weight = 2
 [params]
   image = 'images/Figure 1.PNG'
   image_id = 'DBVMD-image'
