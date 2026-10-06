@@ -447,11 +447,6 @@ ul {
   max-width: 600px;
 }
 
-#recordcrate-img {
-  width: 100px;
-  border-radius: 5px;
-}
-
 #DBVMD-image, #WaterNet-Logo {
   width: 400px;
   align-self: center;
@@ -584,13 +579,9 @@ h1 {
   align-self: center;
 }
 
-#DBVMD-image {
+#DBVMD-image, #WaterNet-Logo {
   flex: 1 1 300px;
   border-radius: 10px;
-}
-
-#recordcrate {
-  flex-direction: row-reverse;
 }
 
 }
