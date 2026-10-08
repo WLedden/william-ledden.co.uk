@@ -450,6 +450,8 @@ ul {
 .experience-image {
   width: 400px;
   align-self: center;
+  flex: 0 0 120px;
+  border-radius: 10px;
 }
 
 .exp-title {
@@ -470,7 +472,7 @@ ul {
 /* Footer */
 
 footer {
-  background-color: #004E7E;
+  background-color: #008ce3;
   color: white;
   text-align: center;
   font-family: "Inder";
@@ -577,11 +579,6 @@ h1 {
 .experience-text {
   flex: 1 0 200px;
   align-self: center;
-}
-
-#DBVMD-image, #WaterNet-Logo {
-  flex: 1 1 300px;
-  border-radius: 10px;
 }
 
 }

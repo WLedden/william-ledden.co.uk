@@ -1,12 +1,14 @@
 +++
 title = 'William Ledden'
 [params]
-  role = 'Junior Software Developer at TetraTech Europe'
+  role = 'Software Developer'
   profile_image = 'images/profilepic-square.jpg'
 +++
 
-Computer Science & Artificial Intelligence graduate from Swansea University with award-winning academic work and hands-on machine learning research experience.
+Junior Software Developer at TetraTech working on WaterNet - a SaaS platform for clean water management for utility companies across the UK.
 
-I bring strong technical skills, curiosity, and a collaborative mindset to every project.
+Swansea University Graduate in Computer Science & Artificial Intelligence with award-winning academic work and machine learning research experience.
 
-Recently I have started a new role at TetraTech Europe as a junior software developer. I'm excited to apply my skills in a professional environment and improve my knowledge of industry development.
+I have a strong passion for AI safety, litigation, and regulation, with a particular interest in safe AI design and goal alignment.
+
+I'm looking to improve knowledge and experience in the field as well as connect with others who hold similar interests.

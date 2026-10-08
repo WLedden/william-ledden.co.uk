@@ -21,28 +21,12 @@
     </div>
 </section>
 
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="section-content">
-        <div class="skills-grid">
-            {{ range readDir "static/images/skills" }}
-                {{ if not .IsDir }}
-                <div class="skills-item">
-                    <img src="/images/skills/{{ .Name }}" alt="{{ .Name }}" loading="lazy">
-                    <p class="skill-name">{{ replaceRE `\.[^.]+$` "" .Name }}</p>
-                </div>
-                {{ end }}
-            {{ end }}
-        </div>
-    </div>
-</section>
-
 <section id="experience">
     <h2 class="section-title">Experience</h2>
     <div class="section-content">
         {{ range (site.GetPage "/experience").Pages.ByWeight }}
         <div class="experience-item">
-            <img src="/{{ .Params.image }}" alt="{{ .Title }}" id="{{ .Params.image_id }}" class="experience-image">
+            <img src="/{{ .Params.image }}" alt="{{ .Title }}" class="experience-image">
             <div class="experience-text">
                 <h3 class="exp-title">{{ .Title }}</h3>
                 {{ .Content }}
@@ -81,6 +65,22 @@
                 </div>
                 {{ end }}
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-content">
+        <div class="skills-grid">
+            {{ range readDir "static/images/skills" }}
+                {{ if not .IsDir }}
+                <div class="skills-item">
+                    <img src="/images/skills/{{ .Name }}" alt="{{ .Name }}" loading="lazy">
+                    <p class="skill-name">{{ replaceRE `\.[^.]+$` "" .Name }}</p>
+                </div>
+                {{ end }}
+            {{ end }}
         </div>
     </div>
 </section>
