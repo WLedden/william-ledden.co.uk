@@ -111,6 +111,13 @@ jobs:
           path: ${{ runner.temp }}/.cache/hugo
           key: hugo-${{ github.run_id }}
           restore-keys: hugo-
+      
+      - name: Build TypeScript
+        run: |
+          if [[ -f tsconfig.json ]]; then
+            echo "Building TypeScript..."
+            npm run build:ts
+          fi
 
       - name: Build
         run: |

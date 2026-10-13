@@ -27,3 +27,7 @@ Thumbs.db
 
 # Environment and secrets
 .env
+
+# TypeScript build output
+static/js/
+node_modules/
