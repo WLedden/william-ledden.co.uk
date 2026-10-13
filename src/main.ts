@@ -1,6 +1,6 @@
-function greet(name: string) {
-    return `Hello, ${name}!`;
+window.onload = function() {
+  const checkbox = document.getElementById("checkbox");
+  checkbox!.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+  })
 }
- 
-const message = greet('World');
-console.log(message);
